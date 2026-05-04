@@ -216,56 +216,6 @@ body {
   border-radius: 30px;
 }
 
-.hero-mascot {
-  position: absolute;
-  left: 29%;
-  bottom: 2%;
-  z-index: 12;
-  width: min(27vw, 280px);
-  max-height: 330px;
-  object-fit: contain;
-  border-radius: 28px;
-  filter: drop-shadow(0 18px 30px rgba(13, 40, 69, 0.18));
-  transition: transform 200ms ease;
-}
-
-.hero-mascot:hover {
-  transform: translateY(-5px) rotate(-1deg);
-}
-
-.product-print {
-  position: absolute;
-  z-index: 8;
-  max-width: 180px;
-  text-align: center;
-  color: #10172E;
-  font-weight: 900;
-  line-height: 1.08;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-
-.print-shirt {
-  left: 34%;
-  top: 38%;
-  font-size: clamp(1.1rem, 2vw, 2rem);
-}
-
-.print-mug {
-  left: 7%;
-  bottom: 22%;
-  font-size: clamp(0.62rem, 1vw, 0.95rem);
-  transform: rotate(-4deg);
-}
-
-.print-bag {
-  right: 5%;
-  bottom: 25%;
-  color: var(--orange);
-  font-size: clamp(0.95rem, 1.6vw, 1.55rem);
-  transform: rotate(-2deg);
-}
-
 .section-heading {
   text-align: center;
 }
@@ -766,18 +716,6 @@ body.modal-open {
     margin-left: 0;
   }
 
-  .product-print {
-    display: none;
-  }
-
-  .hero-mascot {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    display: block;
-    width: min(70vw, 320px);
-    margin: 18px auto 0;
-  }
 }
 
 @media (max-width: 640px) {
