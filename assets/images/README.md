@@ -2,7 +2,7 @@
 
 Use estes nomes como pontos de troca no HTML:
 
-- `hero-shirt.jpg`: produto principal do hero, camiseta.
+- `hero-shirt.png`: produto principal do hero, camiseta.
 - `hero-mug.jpg`: produto do hero, caneca.
 - `hero-bag.jpg`: produto do hero, ecobag.
 - `kv-mascot-welcome.png`: mascote do hero.
