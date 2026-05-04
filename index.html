@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marmota | Produtos personalizados</title>
+  <meta name="description" content="Presentes personalizados com afeto, humor e identidade para transformar sentimentos em memórias." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body class="bg-white text-marmota-ink antialiased">
+  <header id="section-header" class="sticky top-0 z-50 border-b border-slate-200/60 bg-white/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
+      <a href="#" class="brand-logo" aria-label="Marmota início">
+        Marmota<span></span>
+      </a>
+
+      <nav class="hidden items-center gap-10 text-sm font-semibold text-slate-700 lg:flex" aria-label="Navegação principal">
+        <a href="#section-product-grid" class="transition-colors duration-200 hover:text-marmota-blue">Produtos</a>
+        <a href="#section-about" class="transition-colors duration-200 hover:text-marmota-blue">Sobre</a>
+        <a href="#section-how-it-works" class="transition-colors duration-200 hover:text-marmota-blue">Como funciona</a>
+        <a href="#section-faq" class="transition-colors duration-200 hover:text-marmota-blue">FAQ</a>
+        <a href="#section-footer" class="transition-colors duration-200 hover:text-marmota-blue">Contato</a>
+      </nav>
+
+      <a href="#section-final-cta" class="inline-flex items-center gap-2 rounded-2xl bg-marmota-blue px-5 py-3 text-sm font-bold text-white shadow-lg shadow-blue-700/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lift">
+        <span class="hidden sm:inline">Criar minha estampa</span>
+        <span class="sm:hidden">Criar</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section id="section-hero" class="hero-shell relative overflow-hidden">
+      <div class="hero-wave"></div>
+      <div class="decor decor-star left-[4%] top-28">✦</div>
+      <div class="decor decor-loop left-4 bottom-16"></div>
+      <div class="decor decor-lines right-9 top-36"></div>
+
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 pb-12 pt-14 sm:px-6 lg:grid-cols-[0.82fr_1.18fr] lg:px-8 lg:pb-16 lg:pt-16">
+        <div class="relative z-10">
+          <h1 class="max-w-xl text-4xl font-black leading-[1.05] tracking-tight text-[#071338] sm:text-5xl lg:text-6xl">
+            Transforme sentimentos em presentes <span class="text-marmota-blue">memoráveis</span>
+          </h1>
+          <p class="mt-6 max-w-lg text-base leading-8 text-slate-700 sm:text-lg">
+            Produtos personalizados com afeto, humor e identidade para dizer “lembrei de você” de um jeito leve, criativo e cheio de significado.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="#section-product-grid" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-marmota-blue px-8 py-4 text-sm font-bold text-white shadow-lg shadow-blue-700/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lift">
+              Ver produtos
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#section-final-cta" class="inline-flex items-center justify-center rounded-2xl border-2 border-marmota-blue bg-white px-8 py-4 text-sm font-bold text-marmota-blue transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-50">
+              Criar minha estampa
+            </a>
+          </div>
+
+          <div class="mt-10 flex flex-wrap items-center gap-x-7 gap-y-4 text-xs font-semibold text-slate-700">
+            <span class="inline-flex items-center gap-2"><span class="text-lg">💙</span> Afeto em cada detalhe</span>
+            <span class="hidden h-1 w-1 rounded-full bg-slate-300 sm:block"></span>
+            <span class="inline-flex items-center gap-2"><span class="text-lg">😄</span> Humor compartilhável</span>
+            <span class="hidden h-1 w-1 rounded-full bg-slate-300 sm:block"></span>
+            <span class="inline-flex items-center gap-2"><span class="text-lg">🎁</span> Presente com memória</span>
+          </div>
+        </div>
+
+        <div class="relative min-h-[380px] lg:min-h-[480px]">
+          <div class="absolute bottom-5 left-5 right-0 top-20 rounded-full bg-[#6EA1F4]"></div>
+          <img class="hero-product hero-shirt" src="assets/images/hero-shirt.jpg" alt="Camiseta personalizada Marmota" />
+          <img class="hero-product hero-mug" src="assets/images/hero-mug.jpg" alt="Caneca personalizada Marmota" />
+          <img class="hero-product hero-bag" src="assets/images/hero-bag.jpg" alt="Ecobag personalizada Marmota" />
+          <img class="hero-mascot" src="assets/images/kv-mascot-welcome.png" alt="Mascote Marmota dando boas-vindas" />
+          <div class="product-print print-shirt">CAFÉ,<br />FOCO E<br />ANSIEDADE</div>
+          <div class="product-print print-mug">NÃO É<br />PREGUIÇA,<br />É ECONOMIA</div>
+          <div class="product-print print-bag">LEVANDO<br />COISAS E<br />BOAS ENERGIAS</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-product-grid" class="py-12 sm:py-16">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="section-heading">
+          <h2>Nossos produtos</h2>
+        </div>
+
+        <div class="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="product-card">
+            <img src="assets/images/product-shirt.jpg" alt="Camiseta personalizada" />
+            <h3>Camisetas</h3>
+            <button type="button" data-gallery="camisetas">Ver opções</button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/product-mug.jpg" alt="Caneca personalizada" />
+            <h3>Canecas</h3>
+            <button type="button" data-gallery="canecas">Ver opções</button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/product-bag.jpg" alt="Ecobag personalizada" />
+            <h3>Ecobags</h3>
+            <button type="button" data-gallery="ecobags">Ver opções</button>
+          </article>
+          <article class="product-card">
+            <img src="assets/images/product-bottle.jpg" alt="Garrafa personalizada" />
+            <h3>Garrafas</h3>
+            <button type="button" data-gallery="garrafas">Ver opções</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-benefits" class="pb-12">
+      <div class="mx-auto grid max-w-7xl gap-6 px-5 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div class="benefit-card">
+          <span class="bg-blue-100">🎨</span>
+          <div>
+            <h3>Artes exclusivas</h3>
+            <p>Criações autorais com frases curtas, impacto rápido e personalidade.</p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <span class="bg-orange-100">📍</span>
+          <div>
+            <h3>Produção local</h3>
+            <p>Cuidado nos detalhes para transformar produto em experiência.</p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <span class="bg-emerald-100">✏️</span>
+          <div>
+            <h3>Personalização fácil</h3>
+            <p>Customize frase, ideia ou sentimento com aprovação antes de produzir.</p>
+          </div>
+        </div>
+        <div class="benefit-card">
+          <span class="bg-violet-100">🎁</span>
+          <div>
+            <h3>Ideal para presentes</h3>
+            <p>Presentes criativos que falam por você e criam memória emocional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-about" class="px-5 pb-12 sm:px-6 lg:px-8">
+      <div class="about-panel mx-auto grid max-w-7xl items-center gap-8 overflow-hidden rounded-[2rem] px-7 py-10 sm:px-12 lg:grid-cols-[0.86fr_1.14fr] lg:py-0">
+        <div class="relative order-2 min-h-[320px] lg:order-1">
+          <img class="kv-image absolute bottom-[-40px] left-1/2 max-h-[420px] w-auto -translate-x-1/2 lg:left-16 lg:translate-x-0" src="assets/images/kv-mascot-gift.png" alt="Mascote Marmota segurando um presente" />
+          <span class="absolute left-2 top-14 text-3xl text-marmota-orange">♡</span>
+          <span class="absolute right-12 top-10 text-3xl text-marmota-orange">↗</span>
+        </div>
+        <div class="relative z-10 order-1 py-6 lg:order-2">
+          <p class="text-sm font-extrabold uppercase tracking-wide text-marmota-orange">Sobre a Marmota</p>
+          <h2 class="mt-3 max-w-xl text-3xl font-black leading-tight tracking-tight sm:text-4xl">
+            Produtos que viram memórias (e arrancam sorrisos)
+          </h2>
+          <p class="mt-5 max-w-2xl leading-8 text-slate-700">
+            A Marmota nasceu da vontade de transformar ideias simples em presentes criativos que fazem parte do dia a dia das pessoas.
+          </p>
+          <p class="mt-4 max-w-2xl leading-8 text-slate-700">
+            Cada estampa carrega afeto, humor e identidade. Seja para você ou para presentear alguém especial.
+          </p>
+          <p class="mt-5 font-bold text-marmota-orange">Mais que produtos, criamos conexões.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-featured-products" class="pb-14">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="section-heading">
+          <h2>Mais vendidos</h2>
+        </div>
+
+        <div class="mt-9 grid gap-6 lg:grid-cols-3">
+          <article class="seller-card">
+            <span class="badge badge-orange">🔥 Viral</span>
+            <img src="assets/images/seller-shirt.jpg" alt="Camiseta mais vendida" />
+            <div class="seller-info">
+              <div>
+                <h3>Socializar? Hoje não, obrigado</h3>
+                <p>R$ 79,90</p>
+              </div>
+              <button type="button" aria-label="Adicionar ao carrinho">🛒</button>
+            </div>
+          </article>
+          <article class="seller-card">
+            <span class="badge badge-blue">⭐ Mais vendido</span>
+            <img src="assets/images/seller-mug.jpg" alt="Caneca mais vendida" />
+            <div class="seller-info">
+              <div>
+                <h3>Não é preguiça, é economia</h3>
+                <p>R$ 49,90</p>
+              </div>
+              <button type="button" aria-label="Adicionar ao carrinho">🛒</button>
+            </div>
+          </article>
+          <article class="seller-card">
+            <span class="badge badge-orange">🔥 Viral</span>
+            <img src="assets/images/seller-bag.jpg" alt="Ecobag mais vendida" />
+            <div class="seller-info">
+              <div>
+                <h3>Levando coisas e boas energias</h3>
+                <p>R$ 59,90</p>
+              </div>
+              <button type="button" aria-label="Adicionar ao carrinho">🛒</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-how-it-works" class="pb-14">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="section-heading">
+          <h2>Como funciona</h2>
+        </div>
+
+        <div class="steps-wrap mt-9 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="step-card">
+            <span>1</span>
+            <div class="step-icon">👕</div>
+            <h3>Escolha o produto</h3>
+            <p>Escolha entre camisetas, canecas, ecobags e muito mais.</p>
+          </div>
+          <div class="step-card">
+            <span>2</span>
+            <div class="step-icon">✏️</div>
+            <h3>Personalize</h3>
+            <p>Adicione sua estampa ou escolha uma das nossas artes exclusivas.</p>
+          </div>
+          <div class="step-card">
+            <span>3</span>
+            <div class="step-icon">💳</div>
+            <h3>Finalize o pedido</h3>
+            <p>Pagamento seguro e processo rápido para você finalizar.</p>
+          </div>
+          <div class="step-card">
+            <span>4</span>
+            <div class="step-icon">📦</div>
+            <h3>Receba em casa</h3>
+            <p>Enviamos para todo o Brasil com muito cuidado e carinho.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-testimonials" class="bg-gradient-to-b from-slate-50 to-white py-12">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="section-heading">
+          <h2>O que dizem por aí</h2>
+        </div>
+
+        <div class="mt-9 grid gap-7 lg:grid-cols-3">
+          <figure class="testimonial-card">
+            <div class="flex items-center gap-4">
+              <img src="assets/images/testimonial-juliana.jpg" alt="Juliana M." />
+              <div>
+                <figcaption>Juliana M.</figcaption>
+                <p class="text-orange-400">★★★★★</p>
+              </div>
+            </div>
+            <blockquote>"A qualidade é incrível e as estampas são demais! Já comprei 3 vezes e sempre chega tudo certinho."</blockquote>
+          </figure>
+          <figure class="testimonial-card">
+            <div class="flex items-center gap-4">
+              <img src="assets/images/testimonial-rafael.jpg" alt="Rafael S." />
+              <div>
+                <figcaption>Rafael S.</figcaption>
+                <p class="text-orange-400">★★★★★</p>
+              </div>
+            </div>
+            <blockquote>"Presenteei minha namorada com uma caneca personalizada e ela amou! Atendimento top também."</blockquote>
+          </figure>
+          <figure class="testimonial-card">
+            <div class="flex items-center gap-4">
+              <img src="assets/images/testimonial-beatriz.jpg" alt="Beatriz L." />
+              <div>
+                <figcaption>Beatriz L.</figcaption>
+                <p class="text-orange-400">★★★★★</p>
+              </div>
+            </div>
+            <blockquote>"As ecobags são lindas e super resistentes. Uso todo dia!"</blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-final-cta" class="cta-band relative overflow-hidden bg-marmota-blue">
+      <div class="mx-auto grid max-w-7xl items-center gap-6 px-5 py-10 sm:px-6 lg:grid-cols-[0.7fr_1.3fr] lg:px-8">
+        <img class="kv-image relative z-10 mx-auto hidden max-h-44 lg:block" src="assets/images/kv-mascot-heart.png" alt="Mascote Marmota segurando coração" />
+        <div class="relative z-10 text-center lg:text-left">
+          <h2 class="text-3xl font-black tracking-tight text-white sm:text-5xl">Crie uma memória hoje</h2>
+          <p class="mt-3 text-blue-100">Sua ideia merece virar presente, conexão e reação boa.</p>
+          <a href="https://wa.me/5500000000000?text=Oi%2C%20quero%20criar%20minha%20estampa%20na%20Marmota" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-marmota-orange px-8 py-4 text-sm font-extrabold text-white shadow-lg shadow-orange-700/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-orange-600">
+            Começar agora
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-faq" class="py-10">
+      <div class="mx-auto max-w-3xl px-5 sm:px-6 lg:px-8">
+        <div class="section-heading">
+          <h2>Dúvidas frequentes</h2>
+        </div>
+
+        <div class="mt-7 space-y-2">
+          <details class="faq-item">
+            <summary>Qual o prazo de produção e entrega?</summary>
+            <div class="faq-panel"><p>Produzimos em até 7 dias úteis após aprovação da arte. A entrega varia conforme o CEP e sempre recebe código de rastreio.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Quais formas de pagamento aceitam?</summary>
+            <div class="faq-panel"><p>Aceitamos Pix, cartão de crédito e boleto. Pedidos personalizados entram em produção após confirmação do pagamento.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Como funciona a personalização?</summary>
+            <div class="faq-panel"><p>Você envia a ideia, frase ou imagem. Nossa equipe prepara um preview para aprovação antes de produzir.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Vocês fazem troca ou devolução?</summary>
+            <div class="faq-panel"><p>Em caso de defeito de fabricação, fazemos a troca. Para produtos personalizados, ajustes são aprovados antes da produção.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="section-footer" class="footer-shell">
+    <div class="mx-auto grid max-w-7xl gap-9 px-5 py-12 sm:px-6 md:grid-cols-4 lg:px-8">
+      <div>
+        <a href="#" class="brand-logo">Marmota<span></span></a>
+        <p class="mt-4 text-sm leading-6 text-slate-600">Mais que produtos, criamos memórias com o seu estilo.</p>
+        <div class="mt-5 flex gap-3 text-marmota-blue">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="TikTok">♪</a>
+          <a href="#" aria-label="WhatsApp">☏</a>
+          <a href="#" aria-label="Email">✉</a>
+        </div>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <a href="#section-product-grid">Produtos</a>
+        <a href="#section-about">Sobre</a>
+        <a href="#section-how-it-works">Como funciona</a>
+        <a href="#section-faq">FAQ</a>
+        <a href="#section-footer">Contato</a>
+      </div>
+      <div>
+        <h3>Ajuda</h3>
+        <a href="#section-faq">Prazos e entregas</a>
+        <a href="#section-faq">Pagamentos</a>
+        <a href="#section-faq">Trocas e devoluções</a>
+        <a href="#section-faq">Política de privacidade</a>
+        <a href="#section-faq">Termos de uso</a>
+      </div>
+      <div>
+        <h3>Fale com a gente</h3>
+        <p>☏ (11) 99999-9999</p>
+        <p>✉ oi@marmota.com.br</p>
+        <p>◷ Seg a Sex, das 9h às 18h</p>
+      </div>
+    </div>
+    <div class="bg-marmota-blue px-5 py-4 text-center text-xs font-medium text-white">
+      © 2026 Marmota. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5500000000000?text=Oi%2C%20quero%20criar%20minha%20estampa%20na%20Marmota" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <span aria-hidden="true">
+      <svg viewBox="0 0 32 32" role="img" focusable="false">
+        <path d="M16.03 4C9.42 4 4.06 9.3 4.06 15.85c0 2.28.66 4.42 1.8 6.23L4 28l6.14-1.77A12.06 12.06 0 0 0 16.03 27C22.64 27 28 21.7 28 15.15 28 9.3 22.64 4 16.03 4Zm0 20.93c-1.86 0-3.59-.53-5.06-1.45l-.36-.22-3.64 1.05 1.1-3.49-.24-.38a9.54 9.54 0 0 1-1.61-5.29c0-5.33 4.4-9.67 9.81-9.67 5.4 0 9.8 4.34 9.8 9.67 0 5.34-4.4 9.78-9.8 9.78Zm5.37-7.24c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.29-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.46a8.9 8.9 0 0 1-1.65-2.03c-.17-.3-.02-.46.13-.61.13-.13.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.36-.27.3-1.04 1-1.04 2.44 0 1.43 1.07 2.82 1.21 3.02.15.2 2.1 3.16 5.08 4.43.71.3 1.27.49 1.7.63.71.22 1.36.19 1.87.12.57-.08 1.75-.71 2-1.4.25-.68.25-1.27.17-1.4-.07-.12-.27-.2-.57-.35Z" />
+      </svg>
+    </span>
+    <strong>Fale conosco<br />pelo WhatsApp</strong>
+  </a>
+
+  <div class="gallery-modal" id="product-gallery-modal" aria-hidden="true">
+    <div class="gallery-modal__backdrop" data-gallery-close></div>
+    <section class="gallery-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title">
+      <button class="gallery-modal__close" type="button" data-gallery-close aria-label="Fechar galeria">×</button>
+      <div class="gallery-modal__header">
+        <p>Galeria de produtos</p>
+        <h2 id="gallery-modal-title">Camisetas</h2>
+      </div>
+      <div class="gallery-modal__grid" id="gallery-modal-grid"></div>
+    </section>
+  </div>
+</body>
+</html>
