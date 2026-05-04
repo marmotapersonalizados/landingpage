@@ -4,20 +4,14 @@ Use estes nomes como pontos de troca no HTML:
 
 - `logo-marmota.png`: imagem usada no logo do header e footer.
 - `favicon.png`: favicon e apple touch icon da página.
-- `hero-shirt.png`: produto principal do hero, camiseta.
+- `hero-shirt.jpg`: produto principal do hero, camiseta.
 - `hero-mug.jpg`: produto do hero, caneca.
 - `hero-bag.jpg`: produto do hero, ecobag.
-- `product-shirt.png`: card de produto, camiseta.
+- `product-shirt.jpg`: card de produto, camiseta.
 - `product-mug.jpg`: card de produto, caneca.
 - `product-bag.jpg`: card de produto, ecobag.
 - `product-bottle.jpg`: card de produto, garrafa.
 - `kv-mascot-gift.png`: mascote da seção sobre.
-- `seller-shirt.jpg`: card mais vendido, camiseta.
-- `seller-mug.jpg`: card mais vendido, caneca.
-- `seller-bag.jpg`: card mais vendido, ecobag.
-- `testimonial-juliana.jpg`: foto do depoimento 1.
-- `testimonial-rafael.jpg`: foto do depoimento 2.
-- `testimonial-beatriz.jpg`: foto do depoimento 3.
 - `kv-mascot-heart.png`: mascote do CTA final.
 
 Assets `kv-*` vieram do KV da marca.

@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  <link rel="preload" as="image" href="assets/images/hero-shirt.jpg" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
@@ -52,7 +53,7 @@
             Transforme sentimentos em presentes <span class="text-marmota-blue">memoráveis</span>
           </h1>
           <p class="mt-6 max-w-lg text-base leading-8 text-slate-700 sm:text-lg">
-            Produtos personalizados com afeto, humor e identidade para dizer “lembrei de você” de um jeito leve, criativo e cheio de significado.
+            Produtos personalizados com afeto, humor e identidade para dizer "lembrei de você" de um jeito leve, criativo e cheio de significado.
           </p>
           <div class="mt-8 flex flex-col gap-4 sm:flex-row">
             <a href="#section-product-grid" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-marmota-blue px-8 py-4 text-sm font-bold text-white shadow-lg shadow-blue-700/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lift">
@@ -73,12 +74,12 @@
           </div>
         </div>
 
-        <div class="relative min-h-[380px] lg:min-h-[480px]">
-          <div class="absolute bottom-5 left-5 right-0 top-20 rounded-full bg-[#6EA1F4]"></div>
-          <img class="hero-product hero-shirt" src="assets/images/hero-shirt.png" alt="Camiseta personalizada Marmota" />
-          <img class="hero-product hero-mug" src="assets/images/hero-mug.jpg" alt="Caneca personalizada Marmota" />
-          <img class="hero-product hero-bag" src="assets/images/hero-bag.jpg" alt="Ecobag personalizada Marmota" />
-          <img class="hero-product hero-bottle" src="assets/images/product-bottle.jpg" alt="Garrafa personalizada Marmota" />
+        <div class="hero-visual relative min-h-[380px] lg:min-h-[480px]">
+          <div class="hero-backdrop absolute bottom-5 left-5 right-0 top-20 rounded-full bg-[#6EA1F4]"></div>
+          <img class="hero-product hero-shirt" src="assets/images/hero-shirt.jpg" alt="Camiseta personalizada Marmota" fetchpriority="high" />
+          <img class="hero-product hero-mug" src="assets/images/hero-mug.jpg" alt="Caneca personalizada Marmota" decoding="async" />
+          <img class="hero-product hero-bag" src="assets/images/hero-bag.jpg" alt="Ecobag personalizada Marmota" decoding="async" />
+          <img class="hero-product hero-bottle" src="assets/images/product-bottle.jpg" alt="Garrafa personalizada Marmota" decoding="async" />
         </div>
       </div>
     </section>
@@ -91,22 +92,22 @@
 
         <div class="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <article class="product-card">
-            <img src="assets/images/product-shirt.png" alt="Camiseta personalizada" />
+            <img src="assets/images/product-shirt.jpg" alt="Camiseta personalizada" loading="lazy" decoding="async" />
             <h3>Camisetas</h3>
             <button type="button" data-gallery="camisetas">Ver opções</button>
           </article>
           <article class="product-card">
-            <img src="assets/images/product-mug.jpg" alt="Caneca personalizada" />
+            <img src="assets/images/product-mug.jpg" alt="Caneca personalizada" loading="lazy" decoding="async" />
             <h3>Canecas</h3>
             <button type="button" data-gallery="canecas">Ver opções</button>
           </article>
           <article class="product-card">
-            <img src="assets/images/product-bag.jpg" alt="Ecobag personalizada" />
+            <img src="assets/images/product-bag.jpg" alt="Ecobag personalizada" loading="lazy" decoding="async" />
             <h3>Ecobags</h3>
             <button type="button" data-gallery="ecobags">Ver opções</button>
           </article>
           <article class="product-card">
-            <img src="assets/images/product-bottle.jpg" alt="Garrafa personalizada" />
+            <img src="assets/images/product-bottle.jpg" alt="Garrafa personalizada" loading="lazy" decoding="async" />
             <h3>Garrafas</h3>
             <button type="button" data-gallery="garrafas">Ver opções</button>
           </article>
@@ -256,10 +257,9 @@
         </a>
         <p class="mt-4 text-sm leading-6 text-slate-600">Mais que produtos, criamos memórias com o seu estilo.</p>
         <div class="mt-5 flex gap-3 text-marmota-blue">
-          <a href="#" aria-label="Instagram">◎</a>
-          <a href="#" aria-label="TikTok">♪</a>
-          <a href="#" aria-label="WhatsApp">☏</a>
-          <a href="#" aria-label="Email">✉</a>
+          <a href="https://www.instagram.com/oficialmarmota" aria-label="Instagram da Marmota" target="_blank" rel="noopener noreferrer">◎</a>
+          <a href="https://wa.me/5531987137455?text=Oi%2C%20quero%20falar%20com%20a%20Marmota" aria-label="WhatsApp da Marmota" target="_blank" rel="noopener noreferrer">☏</a>
+          <a href="mailto:marmotapersonalizados@gmail.com" aria-label="Email da Marmota">✉</a>
         </div>
       </div>
       <div>
@@ -280,8 +280,8 @@
       </div>
       <div>
         <h3>Fale com a gente</h3>
-        <p>☏ (31) 98713-7455</p>
-        <p class="break-anywhere">✉ marmotapersonalizados@gmail.com</p>
+        <a href="tel:+5531987137455">☏ (31) 98713-7455</a>
+        <a href="mailto:marmotapersonalizados@gmail.com" class="break-anywhere">✉ marmotapersonalizados@gmail.com</a>
         <p>◷ Seg a Sex, das 9h às 18h</p>
       </div>
     </div>

@@ -868,8 +868,25 @@ body.modal-open {
 }
 
 @media (max-width: 1023px) {
+  .hero-visual {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    min-height: auto;
+  }
+
+  .hero-backdrop {
+    inset: 12% 4% 10%;
+    opacity: 0.26;
+  }
+
   .hero-product {
     position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 210px;
+    float: none;
+    margin: 0;
   }
 
   .hero-shirt,
@@ -877,10 +894,8 @@ body.modal-open {
   .hero-bag,
   .hero-bottle {
     inset: auto;
-    width: 24%;
-    height: 260px;
-    float: left;
-    margin: 0 0.5%;
+    width: 100%;
+    height: 210px;
   }
 
   .hero-shirt {
@@ -901,14 +916,14 @@ body.modal-open {
   }
 
   .hero-product {
-    width: 100%;
-    height: 240px;
-    float: none;
-    margin: 0 0 14px;
+    height: 160px;
   }
 
-  .hero-shell .min-h-\[380px\] {
-    min-height: auto;
+  .hero-shirt,
+  .hero-mug,
+  .hero-bag,
+  .hero-bottle {
+    height: 160px;
   }
 
   .benefit-card {

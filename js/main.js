@@ -73,7 +73,7 @@ function openGallery(galleryKey) {
 
     return `
       <article class="gallery-item" tabindex="0" aria-label="${itemTitle}, ${gallery.price}. Clique para ver contatos.">
-        <img src="${gallery.path}/${imageNumber}.jpg?v=${gallery.version}" alt="${gallery.alt} ${index + 1}" loading="lazy" />
+        <img src="${gallery.path}/${imageNumber}.jpg?v=${gallery.version}" alt="${gallery.alt} ${index + 1}" loading="lazy" decoding="async" />
         <div class="gallery-item__overlay">
           <h3>${itemTitle}</h3>
           <p>${gallery.price}</p>
