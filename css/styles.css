@@ -193,27 +193,35 @@ body {
 }
 
 .hero-shirt {
-  left: 18%;
+  left: 16%;
   top: 0;
-  width: min(38vw, 380px);
-  height: min(42vw, 430px);
+  width: min(35vw, 350px);
+  height: min(39vw, 400px);
   border-radius: 34px;
 }
 
 .hero-mug {
   left: 2%;
-  bottom: 8%;
-  width: min(26vw, 270px);
-  height: min(24vw, 240px);
+  bottom: 6%;
+  width: min(22vw, 230px);
+  height: min(21vw, 215px);
   border-radius: 28px;
 }
 
 .hero-bag {
   right: 0;
   bottom: 0;
-  width: min(29vw, 310px);
-  height: min(37vw, 390px);
+  width: min(25vw, 270px);
+  height: min(33vw, 345px);
   border-radius: 30px;
+}
+
+.hero-bottle {
+  right: 22%;
+  bottom: 4%;
+  width: min(18vw, 190px);
+  height: min(28vw, 290px);
+  border-radius: 28px;
 }
 
 .section-heading {
@@ -525,6 +533,11 @@ body {
   transition: color 200ms ease;
 }
 
+.break-anywhere {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .footer-shell a:hover {
   color: var(--blue);
 }
@@ -704,12 +717,13 @@ body.modal-open {
 
   .hero-shirt,
   .hero-mug,
-  .hero-bag {
+  .hero-bag,
+  .hero-bottle {
     inset: auto;
-    width: 32%;
+    width: 24%;
     height: 260px;
     float: left;
-    margin: 0 1%;
+    margin: 0 0.5%;
   }
 
   .hero-shirt {
