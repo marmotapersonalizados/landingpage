@@ -2,6 +2,8 @@
 
 Use estes nomes como pontos de troca no HTML:
 
+- `logo-marmota.png`: imagem usada no logo do header e footer.
+- `favicon.png`: favicon e apple touch icon da página.
 - `hero-shirt.png`: produto principal do hero, camiseta.
 - `hero-mug.jpg`: produto do hero, caneca.
 - `hero-bag.jpg`: produto do hero, ecobag.

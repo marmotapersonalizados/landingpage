@@ -84,45 +84,29 @@ body {
 }
 
 .brand-logo {
-  position: relative;
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   color: var(--blue);
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 900;
   letter-spacing: -0.06em;
   line-height: 1;
   text-shadow: 0 1px 0 rgba(13, 40, 69, 0.08);
 }
 
-.brand-logo span,
-.brand-logo::after,
-.brand-logo::before {
-  content: "";
-  position: absolute;
-  border-radius: 999px;
-  background: var(--orange);
+.brand-logo img {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 10px 22px rgba(13, 40, 69, 0.10);
 }
 
 .brand-logo span {
-  right: -10px;
-  top: -7px;
-  width: 8px;
-  height: 8px;
-}
-
-.brand-logo::before {
-  right: -18px;
-  top: 3px;
-  width: 6px;
-  height: 6px;
-}
-
-.brand-logo::after {
-  right: -4px;
-  top: -14px;
-  width: 5px;
-  height: 5px;
+  display: inline-block;
 }
 
 .hero-shell {
@@ -772,7 +756,14 @@ body.modal-open {
 
 @media (max-width: 640px) {
   .brand-logo {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
+    gap: 8px;
+  }
+
+  .brand-logo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
   }
 
   .hero-product {
