@@ -96,13 +96,12 @@ body {
 }
 
 .brand-logo img {
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 48px;
   flex: 0 0 auto;
-  border-radius: 16px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
-  box-shadow: 0 10px 22px rgba(13, 40, 69, 0.10);
+  filter: drop-shadow(0 8px 14px rgba(13, 40, 69, 0.14));
 }
 
 .brand-logo span {
@@ -761,9 +760,8 @@ body.modal-open {
   }
 
   .brand-logo img {
-    width: 42px;
-    height: 42px;
-    border-radius: 13px;
+    width: 46px;
+    height: 40px;
   }
 
   .hero-product {
