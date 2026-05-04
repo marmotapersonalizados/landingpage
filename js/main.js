@@ -17,21 +17,25 @@ const galleryData = {
     title: 'Camisetas',
     alt: 'Modelo de camiseta personalizada Marmota',
     path: 'assets/images/gallery/camisetas',
+    version: '20260504-shirt',
   },
   canecas: {
     title: 'Canecas',
     alt: 'Modelo de caneca personalizada Marmota',
     path: 'assets/images/gallery/canecas',
+    version: '20260504-mug',
   },
   ecobags: {
     title: 'Ecobags',
     alt: 'Modelo de ecobag personalizada Marmota',
     path: 'assets/images/gallery/ecobags',
+    version: '20260504-bag',
   },
   garrafas: {
     title: 'Garrafas',
     alt: 'Modelo de garrafa personalizada Marmota',
     path: 'assets/images/gallery/garrafas',
+    version: '20260504-bottle-v2',
   },
 };
 
@@ -49,7 +53,7 @@ function openGallery(galleryKey) {
   galleryTitle.textContent = gallery.title;
   galleryGrid.innerHTML = Array.from({ length: 9 }, (_, index) => {
     const imageNumber = String(index + 1).padStart(2, '0');
-    return `<img src="${gallery.path}/${imageNumber}.jpg" alt="${gallery.alt} ${index + 1}" loading="lazy" />`;
+    return `<img src="${gallery.path}/${imageNumber}.jpg?v=${gallery.version}" alt="${gallery.alt} ${index + 1}" loading="lazy" />`;
   }).join('');
 
   galleryModal.classList.add('is-open');

@@ -558,11 +558,33 @@ body {
   transition: transform 200ms ease, box-shadow 200ms ease;
 }
 
+.instagram-float {
+  position: fixed;
+  right: 22px;
+  bottom: 88px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 52%, #FCAF45 100%);
+  padding: 10px 18px 10px 11px;
+  color: #fff;
+  box-shadow: 0 16px 36px rgba(131, 58, 180, 0.28);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
 .whatsapp-float:hover {
   box-shadow: 0 20px 44px rgba(10, 100, 47, 0.36);
   transform: translateY(-3px);
 }
 
+.instagram-float:hover {
+  box-shadow: 0 20px 44px rgba(131, 58, 180, 0.36);
+  transform: translateY(-3px);
+}
+
+.instagram-float span,
 .whatsapp-float span {
   display: grid;
   width: 42px;
@@ -575,12 +597,14 @@ body {
   font-weight: 900;
 }
 
+.instagram-float svg,
 .whatsapp-float svg {
   width: 25px;
   height: 25px;
   fill: currentColor;
 }
 
+.instagram-float strong,
 .whatsapp-float strong {
   font-size: 0.78rem;
   line-height: 1.15;
@@ -768,6 +792,12 @@ body.modal-open {
     padding-right: 11px;
   }
 
+  .instagram-float {
+    bottom: 84px;
+    padding-right: 11px;
+  }
+
+  .instagram-float strong,
   .whatsapp-float strong {
     display: none;
   }
