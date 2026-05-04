@@ -465,6 +465,14 @@ body {
   background-size: 92px 92px;
 }
 
+.cta-mascot-image {
+  width: min(210px, 85%);
+  max-height: 210px;
+  align-self: end;
+  object-fit: contain;
+  transform: translateY(10px);
+}
+
 .kv-image {
   object-fit: contain;
   filter: drop-shadow(0 18px 28px rgba(13, 40, 69, 0.16));
