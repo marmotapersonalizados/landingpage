@@ -708,8 +708,8 @@ body {
   height: 42px;
   place-items: center;
   border-radius: 999px;
-  background: #fff;
-  color: #20C45A;
+  background: transparent;
+  color: #fff;
   font-size: 1.35rem;
   font-weight: 900;
 }
