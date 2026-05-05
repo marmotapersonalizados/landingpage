@@ -180,6 +180,7 @@ body {
 .hero-visual {
   display: grid;
   min-height: 480px;
+  overflow: visible;
   place-items: center;
 }
 
@@ -187,11 +188,19 @@ body {
   opacity: 0.78;
 }
 
-.hero-products-image {
+.hero-products-picture {
   position: relative;
   z-index: 2;
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+.hero-products-image {
+  position: relative;
   display: block;
   width: min(100%, 760px);
+  max-width: none;
   max-height: 520px;
   object-fit: contain;
   filter: drop-shadow(0 26px 36px rgba(13, 40, 69, 0.18));
@@ -326,6 +335,10 @@ body {
   border: 26px solid rgba(255, 255, 255, 0.35);
 }
 
+.about-mascot-wrap {
+  margin-top: -10px;
+}
+
 .steps-wrap {
   position: relative;
 }
@@ -425,6 +438,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .about-mascot-wrap {
+    margin-top: 0;
+  }
+
   .about-mascot-image {
     left: 16px;
     bottom: -22px;
@@ -848,14 +865,19 @@ body.modal-open {
 
 @media (max-width: 1023px) {
   .hero-visual {
-    min-height: 360px;
+    min-height: 430px;
+    margin-inline: -18px;
   }
 
   .hero-backdrop {
-    inset: 18% 2% 8%;
-    opacity: 0.34;
+    inset: 24% 3% 12%;
+    opacity: 0.38;
   }
 
+  .hero-products-image {
+    width: min(118vw, 760px);
+    max-height: none;
+  }
 }
 
 @media (max-width: 640px) {
@@ -870,12 +892,18 @@ body.modal-open {
   }
 
   .hero-visual {
-    min-height: 260px;
+    min-height: 340px;
+    margin-top: 12px;
+    margin-inline: -32px;
   }
 
   .hero-products-image {
-    width: min(112%, 520px);
-    max-height: 310px;
+    width: min(150vw, 620px);
+    max-height: none;
+  }
+
+  .hero-products-image:hover {
+    transform: none;
   }
 
   .benefit-card {
@@ -907,13 +935,58 @@ body.modal-open {
   }
 
   .gallery-modal__dialog {
-    max-height: 90vh;
+    max-height: 92vh;
     border-radius: 22px;
-    padding: 22px;
+    padding: 20px 16px;
   }
 
   .gallery-modal__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+  }
+
+  .gallery-item__overlay {
+    gap: 8px;
+    padding: 10px;
+    background: rgba(13, 40, 69, 0.20);
+  }
+
+  .gallery-item__overlay h3 {
+    display: none;
+  }
+
+  .gallery-item__overlay p {
+    padding: 0.28rem 0.68rem;
+    font-size: 0.86rem;
+  }
+
+  .gallery-item__actions {
+    gap: 7px;
+  }
+
+  .gallery-item__actions a,
+  .gallery-item__actions button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .gallery-item__actions svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .about-panel {
+    gap: 10px;
+    padding-bottom: 0;
+  }
+
+  .about-mascot-wrap {
+    min-height: 250px !important;
+  }
+
+  .about-mascot-image {
+    bottom: -10px;
+    width: min(82%, 290px);
+    max-height: 290px;
   }
 }

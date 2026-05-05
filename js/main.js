@@ -163,7 +163,11 @@ galleryGrid?.addEventListener('click', (event) => {
   const item = event.target.closest('.gallery-item');
   if (!item) return;
 
-  item.classList.toggle('is-active');
+  const willActivate = !item.classList.contains('is-active');
+  galleryGrid.querySelectorAll('.gallery-item.is-active').forEach((activeItem) => {
+    activeItem.classList.remove('is-active');
+  });
+  item.classList.toggle('is-active', willActivate);
 });
 
 galleryGrid?.addEventListener('keydown', (event) => {
@@ -173,7 +177,11 @@ galleryGrid?.addEventListener('keydown', (event) => {
   if (!item) return;
 
   event.preventDefault();
-  item.classList.toggle('is-active');
+  const willActivate = !item.classList.contains('is-active');
+  galleryGrid.querySelectorAll('.gallery-item.is-active').forEach((activeItem) => {
+    activeItem.classList.remove('is-active');
+  });
+  item.classList.toggle('is-active', willActivate);
 });
 
 document.addEventListener('keydown', (event) => {

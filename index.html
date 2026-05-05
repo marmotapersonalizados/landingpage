@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
   <link rel="apple-touch-icon" href="assets/images/favicon.png" />
-  <link rel="preload" as="image" href="assets/images/hero-products.png" />
+  <link rel="preload" as="image" href="assets/images/hero-products.webp" type="image/webp" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="css/styles.css" />
@@ -86,7 +86,10 @@
 
         <div class="hero-visual relative">
           <div class="hero-backdrop absolute inset-x-4 bottom-5 top-14 rounded-full bg-[#6EA1F4]"></div>
-          <img class="hero-products-image" src="assets/images/hero-products.png" alt="Produtos personalizados Marmota com camisetas, canecas, garrafas e ecobags" fetchpriority="high" />
+          <picture class="hero-products-picture">
+            <source srcset="assets/images/hero-products.webp" type="image/webp" />
+            <img class="hero-products-image" src="assets/images/hero-products.png" alt="Produtos personalizados Marmota com camisetas, canecas, garrafas e ecobags" fetchpriority="high" />
+          </picture>
         </div>
       </div>
     </section>

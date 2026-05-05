@@ -4,7 +4,8 @@ Use estes nomes como pontos de troca no HTML:
 
 - `logo-marmota.png`: imagem usada no logo do header e footer.
 - `favicon.png`: favicon e apple touch icon da página.
-- `hero-products.png`: composição principal do hero com os produtos da Marmota.
+- `hero-products.webp`: composição principal otimizada do hero com os produtos da Marmota.
+- `hero-products.png`: fallback da composição principal do hero.
 - `product-shirt.jpg`: card de produto, camiseta.
 - `product-mug.jpg`: card de produto, caneca.
 - `product-bag.jpg`: card de produto, ecobag.
