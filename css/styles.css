@@ -891,15 +891,69 @@ body.modal-open {
     height: 40px;
   }
 
+  .hero-container {
+    gap: 18px;
+    padding: 30px 18px 34px;
+  }
+
+  .hero-copy {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    max-width: 21rem;
+    margin-inline: auto;
+    font-size: clamp(2rem, 9.5vw, 2.55rem) !important;
+    line-height: 1.06 !important;
+    letter-spacing: -0.035em;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-text {
+    max-width: 22rem;
+    margin: 16px auto 0;
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 22rem;
+    margin: 22px auto 0;
+    gap: 10px;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.82rem 1.1rem !important;
+    border-radius: 16px;
+    font-size: 0.88rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .hero-badges {
+    justify-content: center;
+    max-width: 21rem;
+    margin: 20px auto 0;
+    gap: 9px 12px;
+  }
+
+  .hero-badges > span {
+    line-height: 1.25;
+  }
+
   .hero-visual {
-    min-height: 250px;
-    margin-top: 10px;
-    margin-inline: -12px;
+    min-height: 220px;
+    margin-top: 2px;
+    margin-inline: -6px;
   }
 
   .hero-products-image {
-    width: min(112vw, 440px);
-    max-height: 285px;
+    width: min(106vw, 400px);
+    max-height: 245px;
   }
 
   .hero-products-image:hover {
