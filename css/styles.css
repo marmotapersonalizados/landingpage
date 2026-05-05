@@ -177,51 +177,30 @@ body {
   transform: rotate(-18deg);
 }
 
-.hero-product {
-  position: absolute;
-  z-index: 5;
+.hero-visual {
+  display: grid;
+  min-height: 480px;
+  place-items: center;
+}
+
+.hero-backdrop {
+  opacity: 0.78;
+}
+
+.hero-products-image {
+  position: relative;
+  z-index: 2;
   display: block;
-  object-fit: cover;
-  background: #fff;
-  box-shadow: 0 24px 45px rgba(13, 40, 69, 0.14);
-  transition: transform 200ms ease, box-shadow 200ms ease;
+  width: min(100%, 760px);
+  max-height: 520px;
+  object-fit: contain;
+  filter: drop-shadow(0 26px 36px rgba(13, 40, 69, 0.18));
+  transition: transform 220ms ease, filter 220ms ease;
 }
 
-.hero-product:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 28px 60px rgba(13, 40, 69, 0.18);
-}
-
-.hero-shirt {
-  left: 16%;
-  top: 0;
-  width: min(35vw, 350px);
-  height: min(39vw, 400px);
-  border-radius: 34px;
-}
-
-.hero-mug {
-  left: 2%;
-  bottom: 6%;
-  width: min(22vw, 230px);
-  height: min(21vw, 215px);
-  border-radius: 28px;
-}
-
-.hero-bag {
-  right: 0;
-  bottom: 0;
-  width: min(25vw, 270px);
-  height: min(33vw, 345px);
-  border-radius: 30px;
-}
-
-.hero-bottle {
-  right: 22%;
-  bottom: 4%;
-  width: min(18vw, 190px);
-  height: min(28vw, 290px);
-  border-radius: 28px;
+.hero-products-image:hover {
+  filter: drop-shadow(0 30px 42px rgba(13, 40, 69, 0.22));
+  transform: translateY(-5px) scale(1.01);
 }
 
 .section-heading {
@@ -869,37 +848,12 @@ body.modal-open {
 
 @media (max-width: 1023px) {
   .hero-visual {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
-    min-height: auto;
+    min-height: 360px;
   }
 
   .hero-backdrop {
-    inset: 12% 4% 10%;
-    opacity: 0.26;
-  }
-
-  .hero-product {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 210px;
-    float: none;
-    margin: 0;
-  }
-
-  .hero-shirt,
-  .hero-mug,
-  .hero-bag,
-  .hero-bottle {
-    inset: auto;
-    width: 100%;
-    height: 210px;
-  }
-
-  .hero-shirt {
-    margin-left: 0;
+    inset: 18% 2% 8%;
+    opacity: 0.34;
   }
 
 }
@@ -915,15 +869,13 @@ body.modal-open {
     height: 40px;
   }
 
-  .hero-product {
-    height: 160px;
+  .hero-visual {
+    min-height: 260px;
   }
 
-  .hero-shirt,
-  .hero-mug,
-  .hero-bag,
-  .hero-bottle {
-    height: 160px;
+  .hero-products-image {
+    width: min(112%, 520px);
+    max-height: 310px;
   }
 
   .benefit-card {
