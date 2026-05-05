@@ -865,17 +865,17 @@ body.modal-open {
 
 @media (max-width: 1023px) {
   .hero-visual {
-    min-height: 430px;
-    margin-inline: -18px;
+    min-height: 360px;
+    margin-inline: -10px;
   }
 
   .hero-backdrop {
-    inset: 24% 3% 12%;
-    opacity: 0.38;
+    inset: 24% 5% 13%;
+    opacity: 0.34;
   }
 
   .hero-products-image {
-    width: min(118vw, 760px);
+    width: min(108vw, 680px);
     max-height: none;
   }
 }
@@ -892,14 +892,14 @@ body.modal-open {
   }
 
   .hero-visual {
-    min-height: 340px;
-    margin-top: 12px;
-    margin-inline: -32px;
+    min-height: 250px;
+    margin-top: 10px;
+    margin-inline: -12px;
   }
 
   .hero-products-image {
-    width: min(150vw, 620px);
-    max-height: none;
+    width: min(112vw, 440px);
+    max-height: 285px;
   }
 
   .hero-products-image:hover {
