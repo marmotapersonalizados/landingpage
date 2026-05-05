@@ -866,7 +866,8 @@ body.modal-open {
 @media (max-width: 1023px) {
   .hero-visual {
     min-height: 360px;
-    margin-inline: -10px;
+    width: 100%;
+    margin-inline: auto;
   }
 
   .hero-backdrop {
@@ -875,7 +876,7 @@ body.modal-open {
   }
 
   .hero-products-image {
-    width: min(108vw, 680px);
+    width: min(104vw, 680px);
     max-height: none;
   }
 }
@@ -894,6 +895,7 @@ body.modal-open {
   .hero-container {
     gap: 18px;
     padding: 30px 18px 34px;
+    justify-items: center;
   }
 
   .hero-copy {
@@ -946,13 +948,14 @@ body.modal-open {
   }
 
   .hero-visual {
+    width: 100%;
     min-height: 220px;
     margin-top: 2px;
-    margin-inline: -6px;
+    margin-inline: auto;
   }
 
   .hero-products-image {
-    width: min(106vw, 400px);
+    width: min(100%, 390px);
     max-height: 245px;
   }
 
