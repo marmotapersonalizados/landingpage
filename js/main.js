@@ -52,6 +52,64 @@ const contactLinks = {
   whatsapp: 'https://wa.me/5531987137455?text=Oi%2C%20quero%20saber%20mais%20sobre%20este%20produto%20da%20Marmota',
 };
 
+const helpContent = {
+  prazos: {
+    title: 'Prazos e entregas',
+    body: `
+      <p>Nossos produtos são feitos sob demanda, com atenção ao acabamento e à aprovação da arte.</p>
+      <ul>
+        <li>O prazo de produção começa após a confirmação do pagamento e aprovação da personalização.</li>
+        <li>O tempo de envio depende da modalidade escolhida e do endereço de entrega.</li>
+        <li>Quando o pedido estiver pronto, enviamos as informações de acompanhamento pelo canal combinado.</li>
+      </ul>
+    `,
+  },
+  pagamentos: {
+    title: 'Pagamentos',
+    body: `
+      <p>Trabalhamos com formas de pagamento simples e seguras para facilitar seu pedido personalizado.</p>
+      <ul>
+        <li>As opções disponíveis são informadas no atendimento antes da finalização.</li>
+        <li>A produção começa após a confirmação do pagamento.</li>
+        <li>Pedidos personalizados podem exigir aprovação prévia da arte antes da produção.</li>
+      </ul>
+    `,
+  },
+  trocas: {
+    title: 'Trocas e devoluções',
+    body: `
+      <p>Como cada produto é personalizado, as trocas seguem critérios específicos para proteger sua ideia e nossa produção.</p>
+      <ul>
+        <li>Em caso de defeito de fabricação, fazemos a troca ou combinamos a melhor solução.</li>
+        <li>Produtos personalizados não podem ser trocados por arrependimento após aprovação e produção da arte.</li>
+        <li>Se notar qualquer problema, fale com a gente assim que receber o pedido.</li>
+      </ul>
+    `,
+  },
+  privacidade: {
+    title: 'Política de privacidade',
+    body: `
+      <p>Usamos seus dados apenas para atender, produzir e entregar seu pedido com segurança.</p>
+      <ul>
+        <li>Coletamos informações necessárias para contato, pagamento, personalização e envio.</li>
+        <li>Não vendemos seus dados pessoais.</li>
+        <li>Arquivos, artes e referências enviados por você são tratados como material do seu pedido.</li>
+      </ul>
+    `,
+  },
+  termos: {
+    title: 'Termos de uso',
+    body: `
+      <p>Ao solicitar um produto Marmota, você confirma que as informações enviadas estão corretas e que aprova a personalização combinada.</p>
+      <ul>
+        <li>Frases, nomes, imagens e referências precisam ser revisados antes da aprovação final.</li>
+        <li>Podemos recusar artes ofensivas, ilegais ou que violem direitos de terceiros.</li>
+        <li>Pequenas variações de cor podem acontecer entre a tela e o produto físico.</li>
+      </ul>
+    `,
+  },
+};
+
 const galleryModal = document.querySelector('#product-gallery-modal');
 const galleryTitle = document.querySelector('#gallery-modal-title');
 const galleryGrid = document.querySelector('#gallery-modal-grid');
@@ -60,6 +118,11 @@ const galleryCloseButtons = document.querySelectorAll('[data-gallery-close]');
 const galleryLightbox = document.querySelector('#gallery-lightbox');
 const galleryLightboxImage = document.querySelector('#gallery-lightbox-image');
 const galleryLightboxClose = document.querySelector('[data-lightbox-close]');
+const helpModal = document.querySelector('#footer-help-modal');
+const helpTitle = document.querySelector('#help-modal-title');
+const helpModalContent = document.querySelector('#help-modal-content');
+const helpButtons = document.querySelectorAll('[data-help-topic]');
+const helpCloseButtons = document.querySelectorAll('[data-help-close]');
 
 function openGallery(galleryKey) {
   const gallery = galleryData[galleryKey];
@@ -131,6 +194,26 @@ function closeLightbox() {
   galleryLightboxImage.alt = '';
 }
 
+function openHelp(topicKey) {
+  const topic = helpContent[topicKey];
+
+  if (!topic || !helpModal || !helpTitle || !helpModalContent) return;
+
+  helpTitle.textContent = topic.title;
+  helpModalContent.innerHTML = topic.body;
+  helpModal.classList.add('is-open');
+  helpModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+
+function closeHelp() {
+  if (!helpModal) return;
+
+  helpModal.classList.remove('is-open');
+  helpModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+}
+
 galleryButtons.forEach((button) => {
   button.addEventListener('click', () => {
     openGallery(button.dataset.gallery);
@@ -142,6 +225,22 @@ galleryCloseButtons.forEach((button) => {
 });
 
 galleryLightboxClose?.addEventListener('click', closeLightbox);
+
+helpButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    openHelp(button.dataset.helpTopic);
+  });
+});
+
+helpCloseButtons.forEach((button) => {
+  button.addEventListener('click', closeHelp);
+});
+
+helpModal?.addEventListener('click', (event) => {
+  if (event.target?.hasAttribute('data-help-close')) {
+    closeHelp();
+  }
+});
 
 galleryLightbox?.addEventListener('click', (event) => {
   if (event.target === galleryLightbox) {
@@ -186,6 +285,11 @@ galleryGrid?.addEventListener('keydown', (event) => {
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
+    if (helpModal?.classList.contains('is-open')) {
+      closeHelp();
+      return;
+    }
+
     if (galleryLightbox?.classList.contains('is-open')) {
       closeLightbox();
       return;

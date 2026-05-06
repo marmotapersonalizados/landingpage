@@ -281,11 +281,11 @@
       </div>
       <div>
         <h3>Ajuda</h3>
-        <a href="#section-faq">Prazos e entregas</a>
-        <a href="#section-faq">Pagamentos</a>
-        <a href="#section-faq">Trocas e devoluções</a>
-        <a href="#section-faq">Política de privacidade</a>
-        <a href="#section-faq">Termos de uso</a>
+        <button class="footer-help-button" type="button" data-help-topic="prazos">Prazos e entregas</button>
+        <button class="footer-help-button" type="button" data-help-topic="pagamentos">Pagamentos</button>
+        <button class="footer-help-button" type="button" data-help-topic="trocas">Trocas e devoluções</button>
+        <button class="footer-help-button" type="button" data-help-topic="privacidade">Política de privacidade</button>
+        <button class="footer-help-button" type="button" data-help-topic="termos">Termos de uso</button>
       </div>
       <div>
         <h3>Fale com a gente</h3>
@@ -330,6 +330,16 @@
         <button class="gallery-lightbox__close" type="button" data-lightbox-close aria-label="Fechar imagem ampliada">×</button>
         <img id="gallery-lightbox-image" src="" alt="" />
       </div>
+    </section>
+  </div>
+
+  <div class="help-modal" id="footer-help-modal" aria-hidden="true">
+    <div class="help-modal__backdrop" data-help-close></div>
+    <section class="help-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="help-modal-title">
+      <button class="help-modal__close" type="button" data-help-close aria-label="Fechar informações">×</button>
+      <p class="help-modal__eyebrow">Ajuda Marmota</p>
+      <h2 id="help-modal-title">Prazos e entregas</h2>
+      <div class="help-modal__content" id="help-modal-content"></div>
     </section>
   </div>
 </body>
